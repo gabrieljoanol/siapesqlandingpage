@@ -119,6 +119,50 @@
   font-size: 1rem;
 }
 
+main .helps {
+  display: flex;
+  flex-direction: column;
+}
+main .helps .helps_container {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+main .helps .helps_container .helps_article {
+  color: #233363;
+}
+main .helps .helps_container .helps_article .title {
+  font-size: 3rem;
+  width: 26rem;
+  margin-top: 2rem;
+}
+main .helps .helps_container .helps_article .content {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+main .helps .helps_container .card {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  gap: 2rem;
+  padding: 0.8rem;
+}
+main .helps .helps_container .card img {
+  width: 6rem;
+}
+main .helps .helps_container .card .title {
+  color: #233363;
+}
+main .helps .helps_container .card p {
+  color: #233363;
+}
+main .helps h3 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 4rem;
+  color: #233363;
+}
+
 * {
   margin: 0;
   padding: 0;
