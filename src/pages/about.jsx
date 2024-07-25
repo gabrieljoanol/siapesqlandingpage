@@ -8,31 +8,35 @@ import Header from "../components/layouts/header";
 export default function About() {
     return (
         <>
-            <Header/>
-            <div className="corpo">
+            <div className="headersobre">
+                <Header/>
                 <div className="imagemsiapesq">
                     <img className="sistema-img" src={siapesq} alt="Sistema" />
-                    <div className="lorem">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reiciendis aliquid explicabo commodi voluptas neque asperiores itaque sint, nulla fugit doloribus dolores iure officia facilis blanditiis quidem laboriosam libero ea.</p>
+                    <div className="textoSobrenos">
+                        <p>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p>
                     </div>
                 </div>
-            </div>
-            <div className="imagempessoas">
-                <img className="pessoas-img" src={equipe} alt="equipe" />
-            </div>
 
-            <div className="informacao-equipe">
-                <h1>Conheça nossa equipe</h1>
-            </div>
-
-            <div className="cards">
-                <div className="card">
-                    <img src={talles} alt="Pessoa 1" />
-                    <h3>Nome da Pessoa 1</h3>
-                    <p></p>
+                <div className="equipe">
+                <img className="imagem-equipe" src={equipe} alt="equipe" />
+                    <h1>Conheça nossa equipe</h1>
                 </div>
                 
-            </div>
+                <div className="cards">
+                    <div className="card1">
+                        <img src={talles} alt="talles" />
+                        <p>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p>
+                    </div>
+
+                    <div className="card2">
+                        <p>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p>
+                        <img src={talles} alt="talles" />
+                    </div>
+                </div>
+                
+            
+           </div>
+                
         </>
     );
 }

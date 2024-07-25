@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Card({photo,title,content}){
+export default function Card({id,photo,title,content}){
     return(
-        <section className="card">
+        <section id={id} className="card">
             <img src={photo} alt="foto descritiva"/>
             <h2 className="title">
                 {title}

@@ -4,6 +4,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+ 
 
     img{
         -webkit-user-drag: none;
@@ -19,6 +20,10 @@
         width: 100%;
         height: 52rem;
         z-index: -1;
+        @media only screen and (max-width:1600px){
+            height: 46.8rem;
+        }
+        
     }
 
     .article_header_container{
@@ -59,6 +64,10 @@
         @media only screen and (max-width: 1920px){
             bottom: 3rem;
         }
+
+        @media only screen and (max-width:1600px){
+            bottom: 6rem;
+        }
     
         img{
             width: 100%;
@@ -89,6 +98,11 @@
                 gap: 15rem;
             }
 
+            @media only screen and (max-width:1600px){
+               gap: 8rem;
+               bottom: 1rem;
+            }
+
             .tracejado{
                 width: 2px;
                 border: thin solid #FFFFFF;
@@ -99,6 +113,11 @@
             div{
                 .title{
                     font-size: 2.5rem;
+                    @media only screen and (max-width:1600px){
+                        font-size: 1.4rem;
+                    }
+
+
                 }
                 .content{
                     font-size: 1rem;
@@ -133,25 +152,34 @@ main{
                 }
             }
 
-            .card{
+            .cards{
+
                 display: flex;
-                flex-direction: column;
-                width: 15rem;
+                justify-content: center;
                 gap: 2rem;
-                padding: .8rem;
-    
-                img{
-                    width: 6rem;
-                }
-    
-                .title{
-                    color: $bgBlue;
-                }
-    
-                p{
-                    color: $bgBlue;
+                align-items: center;
+
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    width: 15rem;
+                    gap: 2rem;
+                    padding: .8rem;
+        
+                    img{
+                        width: 6rem;
+                    }
+        
+                    .title{
+                        color: $bgBlue;
+                    }
+        
+                    p{
+                        color: $bgBlue;
+                    }
                 }
             }
+
         }
 
         h3{
